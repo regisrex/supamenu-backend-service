@@ -27,4 +27,7 @@ public class CreateRestaurantDto {
     @Email
     private String email;
 
+
+    private String photo;
+
 }

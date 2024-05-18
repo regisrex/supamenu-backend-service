@@ -35,7 +35,8 @@ public class RestaurantServiceImpl implements IRestaurantsService {
                 dto.getPhoneNumber(),
                 dto.getRate(),
                 dto.getLocation(),
-                dto.getName()
+                dto.getName(),
+                dto.getPhoto()
         );
         return this.restaurantRepository.save(newRestaurant);
     }
