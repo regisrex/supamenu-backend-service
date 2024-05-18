@@ -50,6 +50,15 @@ public class Restaurant {
     @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<MenuItem> menuItems;
 
+    public Restaurant(String email, String websiteUrl, String phoneNumber, int rate, String location, String name) {
+        this.email = email;
+        this.websiteUrl = websiteUrl;
+        this.phoneNumber = phoneNumber;
+        this.rate = rate;
+        this.location = location;
+        this.name = name;
+    }
+
 
 
 }
