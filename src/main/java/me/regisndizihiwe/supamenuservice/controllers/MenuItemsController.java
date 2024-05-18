@@ -31,7 +31,6 @@ public class MenuItemsController {
                 .body(new ApiResponse(true, "Item added to menu", this.menuService.addMenuItem( itemDto, restaurantId)));
     }
 
-
     @GetMapping("/menu/{restaurantId}")
     public ResponseEntity<ApiResponse> getMenuByRestaurant(@PathVariable("restaurantId") String restoId) {
         return ResponseEntity
